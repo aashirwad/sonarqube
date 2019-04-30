@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha  --watch *.test.js",
+    "sonar": "sonar-scanner   -Dsonar.projectKey=aashirwad_sonarqube   -Dsonar.organization=aashirwad-github   -Dsonar.sources=.   -Dsonar.host.url=https://sonarcloud.io   -Dsonar.login=ec8269e46231a56cbbfe8687f319545545ad6f75"
   },
   "keywords": [],
   "author": "Ashi",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
+    "jquery": "^3.4.0",
     "mocha": "^6.1.4"
-  }
+  },
+  "dependencies": {}
 }
